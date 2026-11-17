@@ -57,9 +57,50 @@ Say `normal mode`, `verbose`, or `stop terse` at any time to revert.
 
 ---
 
+## Installation (PyPI)
+
+```bash
+pip install token-optimizer-plugin
+```
+
+### Python API Usage
+
+```python
+from token_optimizer import compute_stats, savings_report
+
+# Output-side savings & invariant check
+report = savings_report(
+    "Great question! Please run `pytest -q` in src/app/main.ts on v1.2.0.",
+    "Run `pytest -q` in src/app/main.ts (v1.2.0).",
+)
+print(report)
+
+# Input-side context pack stats
+stats = compute_stats(raw_chars=400, compressed_chars=100)
+print(stats.savings_percent)  # 75.0
+```
+
+### CLI Usage
+
+```bash
+# Output-side savings report
+token-optimizer savings --raw "Please run `npm test` on v1.0.0" --lean "Run `npm test` (v1.0.0)"
+
+# Input-side context pack stats
+token-optimizer stats --raw-chars 400 --compressed-chars 100
+
+# Rank files for a goal
+token-optimizer rank --goal "error triage" README.md
+
+# Type-aware file compression
+token-optimizer compress --goal "optimize" skills/input-token-optimizer/scripts/context_pack_builder.py
+```
+
+---
+
 ## Runtime Requirements & Testing
 
-- **Python 3.9+** (stdlib only — no third-party packages, no `pip install` required).
+- **Python 3.9+** (stdlib only — no third-party runtime dependencies).
 - Run the full aggregate test suite (33 tests across both sibling suites) from the plugin root:
 
 ```bash

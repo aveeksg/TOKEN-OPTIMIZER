@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "token-optimizer-plugin"
+version = "1.0.0"
+description = "Local-first, end-to-end token optimization for VS Code Copilot. Compresses workspace context on the input side into a reversible, traceable context pack and rewrites agent output into lean, high-signal language with byte-for-byte invariant preservation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Aveek Sengupta", email = "aveekforyou@gmail.com" }
+]
+keywords = [
+  "token-optimizer",
+  "copilot",
+  "claude-code",
+  "context-compression",
+  "prompt-optimization",
+  "llm",
+  "vscode"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/aveeksg/TOKEN-OPTIMIZER"
+Repository = "https://github.com/aveeksg/TOKEN-OPTIMIZER"
+Issues = "https://github.com/aveeksg/TOKEN-OPTIMIZER/issues"
+
+[project.scripts]
+token-optimizer = "token_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["token_optimizer*"]

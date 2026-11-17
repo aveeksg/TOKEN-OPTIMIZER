@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include .claude-plugin/plugin.json
+recursive-include agents *.md
+recursive-include skills *.md *.yaml *.py *.json *.log
+global-exclude __pycache__ *.py[cod]

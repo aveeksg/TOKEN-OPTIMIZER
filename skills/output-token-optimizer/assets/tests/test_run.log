@@ -24,6 +24,6 @@ test_empty_returns_zero (test_token_estimator.TestTokenEstimator.test_empty_retu
 test_estimate_tokens_divides_by_four (test_token_estimator.TestTokenEstimator.test_estimate_tokens_divides_by_four) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.001s
+Ran 24 tests in 0.003s
 
 OK
