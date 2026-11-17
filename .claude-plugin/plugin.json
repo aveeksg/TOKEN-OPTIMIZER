@@ -1,0 +1,9 @@
+{
+  "name": "token-optimizer-plugin",
+  "description": "Local-first, end-to-end token optimization for VS Code Copilot. Compresses workspace context on the input side into a reversible, traceable context pack and rewrites agent output into lean, high-signal language with byte-for-byte invariant preservation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aveek Sengupta",
+    "email": "aveekforyou@gmail.com"
+  }
+}

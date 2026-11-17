@@ -1,0 +1,29 @@
+test_extracts_bare_relative_path_with_extension (test_invariant_guard.TestInvariantGuard.test_extracts_bare_relative_path_with_extension) ... ok
+test_extracts_error_identifiers (test_invariant_guard.TestInvariantGuard.test_extracts_error_identifiers) ... ok
+test_extracts_fenced_code_block (test_invariant_guard.TestInvariantGuard.test_extracts_fenced_code_block) ... ok
+test_extracts_inline_code (test_invariant_guard.TestInvariantGuard.test_extracts_inline_code) ... ok
+test_extracts_posix_path (test_invariant_guard.TestInvariantGuard.test_extracts_posix_path) ... ok
+test_extracts_url (test_invariant_guard.TestInvariantGuard.test_extracts_url) ... ok
+test_extracts_version_strings (test_invariant_guard.TestInvariantGuard.test_extracts_version_strings) ... ok
+test_extracts_windows_path (test_invariant_guard.TestInvariantGuard.test_extracts_windows_path) ... ok
+test_ignores_unanchored_prose_slashes (test_invariant_guard.TestInvariantGuard.test_ignores_unanchored_prose_slashes) ... ok
+test_order_preserving_deduplication (test_invariant_guard.TestInvariantGuard.test_order_preserving_deduplication) ... ok
+test_verify_invariants_flags_altered_path_and_version (test_invariant_guard.TestInvariantGuard.test_verify_invariants_flags_altered_path_and_version) ... ok
+test_verify_invariants_flags_dropped_command (test_invariant_guard.TestInvariantGuard.test_verify_invariants_flags_dropped_command) ... ok
+test_verify_invariants_passes_when_preserved (test_invariant_guard.TestInvariantGuard.test_verify_invariants_passes_when_preserved) ... ok
+test_empty_raw_is_zero_division_safe (test_savings_report.TestSavingsReport.test_empty_raw_is_zero_division_safe) ... ok
+test_invariants_preserved_false_when_code_dropped (test_savings_report.TestSavingsReport.test_invariants_preserved_false_when_code_dropped) ... ok
+test_invariants_preserved_true_when_code_kept (test_savings_report.TestSavingsReport.test_invariants_preserved_true_when_code_kept) ... ok
+test_positive_reduction_on_verbose_input (test_savings_report.TestSavingsReport.test_positive_reduction_on_verbose_input) ... ok
+test_reduction_rounded_to_one_decimal (test_savings_report.TestSavingsReport.test_reduction_rounded_to_one_decimal) ... ok
+test_report_has_all_six_keys (test_savings_report.TestSavingsReport.test_report_has_all_six_keys) ... ok
+test_bankers_rounding_10_and_14 (test_token_estimator.TestTokenEstimator.test_bankers_rounding_10_and_14) ... ok
+test_chars_per_token_constant_is_four (test_token_estimator.TestTokenEstimator.test_chars_per_token_constant_is_four) ... ok
+test_count_chars_matches_len (test_token_estimator.TestTokenEstimator.test_count_chars_matches_len) ... ok
+test_empty_returns_zero (test_token_estimator.TestTokenEstimator.test_empty_returns_zero) ... ok
+test_estimate_tokens_divides_by_four (test_token_estimator.TestTokenEstimator.test_estimate_tokens_divides_by_four) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.001s
+
+OK

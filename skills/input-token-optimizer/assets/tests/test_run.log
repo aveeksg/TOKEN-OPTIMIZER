@@ -1,0 +1,14 @@
+test_content_snippet_raises_score (test_artifact_ranker.TestArtifactRanker.test_content_snippet_raises_score) ... ok
+test_filename_goal_match_scores_high (test_artifact_ranker.TestArtifactRanker.test_filename_goal_match_scores_high) ... ok
+test_compute_stats_basic_ratios (test_manifest_and_stats.TestManifestAndStats.test_compute_stats_basic_ratios) ... ok
+test_compute_stats_manifest_derived_confidence_counts (test_manifest_and_stats.TestManifestAndStats.test_compute_stats_manifest_derived_confidence_counts) ... ok
+test_compute_stats_no_manifest_zero_confidence (test_manifest_and_stats.TestManifestAndStats.test_compute_stats_no_manifest_zero_confidence) ... ok
+test_manifest_maps_1_based_lines_and_tags (test_manifest_and_stats.TestManifestAndStats.test_manifest_maps_1_based_lines_and_tags) ... ok
+test_code_extractor_pulls_def_and_control_flow (test_type_aware_compressor.TestTypeAwareCompressor.test_code_extractor_pulls_def_and_control_flow) ... ok
+test_log_extractor_finds_error_stack_and_id_chunks (test_type_aware_compressor.TestTypeAwareCompressor.test_log_extractor_finds_error_stack_and_id_chunks) ... ok
+test_sql_extractor_yields_select_and_where_summaries (test_type_aware_compressor.TestTypeAwareCompressor.test_sql_extractor_yields_select_and_where_summaries) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

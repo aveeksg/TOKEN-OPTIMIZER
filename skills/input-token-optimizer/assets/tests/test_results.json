@@ -1,0 +1,87 @@
+{
+  "suite": "input-token-optimizer",
+  "verdict": "PASS",
+  "timestamp": "2026-11-17T09:28:15.670313+00:00",
+  "python_version": "3.11.8",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "total": 9,
+  "passed": 9,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "duration_ms": 1.582,
+  "tests": [
+    {
+      "module": "test_artifact_ranker",
+      "class": "TestArtifactRanker",
+      "test": "test_content_snippet_raises_score",
+      "status": "PASS",
+      "duration_ms": 0.255,
+      "detail": ""
+    },
+    {
+      "module": "test_artifact_ranker",
+      "class": "TestArtifactRanker",
+      "test": "test_filename_goal_match_scores_high",
+      "status": "PASS",
+      "duration_ms": 0.044,
+      "detail": ""
+    },
+    {
+      "module": "test_manifest_and_stats",
+      "class": "TestManifestAndStats",
+      "test": "test_compute_stats_basic_ratios",
+      "status": "PASS",
+      "duration_ms": 0.031,
+      "detail": ""
+    },
+    {
+      "module": "test_manifest_and_stats",
+      "class": "TestManifestAndStats",
+      "test": "test_compute_stats_manifest_derived_confidence_counts",
+      "status": "PASS",
+      "duration_ms": 0.057,
+      "detail": ""
+    },
+    {
+      "module": "test_manifest_and_stats",
+      "class": "TestManifestAndStats",
+      "test": "test_compute_stats_no_manifest_zero_confidence",
+      "status": "PASS",
+      "duration_ms": 0.02,
+      "detail": ""
+    },
+    {
+      "module": "test_manifest_and_stats",
+      "class": "TestManifestAndStats",
+      "test": "test_manifest_maps_1_based_lines_and_tags",
+      "status": "PASS",
+      "duration_ms": 0.039,
+      "detail": ""
+    },
+    {
+      "module": "test_type_aware_compressor",
+      "class": "TestTypeAwareCompressor",
+      "test": "test_code_extractor_pulls_def_and_control_flow",
+      "status": "PASS",
+      "duration_ms": 0.039,
+      "detail": ""
+    },
+    {
+      "module": "test_type_aware_compressor",
+      "class": "TestTypeAwareCompressor",
+      "test": "test_log_extractor_finds_error_stack_and_id_chunks",
+      "status": "PASS",
+      "duration_ms": 0.035,
+      "detail": ""
+    },
+    {
+      "module": "test_type_aware_compressor",
+      "class": "TestTypeAwareCompressor",
+      "test": "test_sql_extractor_yields_select_and_where_summaries",
+      "status": "PASS",
+      "duration_ms": 0.062,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+name: input-token-optimizer
+version: "1.0.0"
+description: Contract for local-first input context compression and reversible context pack generation.
+
+inputs:
+  goal:
+    type: string
+    required: true
+    minLength: 5
+    maxLength: 200
+  scope_paths:
+    type: array
+    items: string
+    required: true
+    minItems: 1
+  mode:
+    type: string
+    required: false
+    default: balanced
+    enum:
+      - quick
+      - balanced
+      - lossless
+  max_files:
+    type: integer
+    required: false
+    default: 200
+    min: 1
+    max: 5000
+  max_chars:
+    type: integer
+    required: false
+    default: 800000
+    min: 10000
+    max: 10000000
+  include_patterns:
+    type: array
+    items: string
+    required: false
+    default: []
+  exclude_patterns:
+    type: array
+    items: string
+    required: false
+    default: []
+
+outputs:
+  output_dir_pattern: "temp/context_pack_vN/"
+  artifacts:
+    context_pack.md:
+      required: true
+      description: Task-focused compressed context (human-readable)
+      min_bytes: 100
+      max_bytes: 500000
+    context_manifest.json:
+      required: true
+      description: Reversible chunk to source mapping
+      min_bytes: 50
+      max_bytes: 5000000
+    context_retrieval_index.json:
+      required: true
+      description: Tag, symbol, file, and time lookup index
+      min_bytes: 50
+      max_bytes: 2000000
+    context_stats.md:
+      required: true
+      description: Compression statistics and confidence report
+      min_bytes: 100
+      max_bytes: 100000
+    context_pack_reasoning_log.md:
+      required: true
+      description: Audit trail of compression and ranking decisions
+      min_bytes: 50
+      max_bytes: 500000
+
+validation:
+  manifest_coverage: 100%
+  source_traceability: required
+  savings_transparency: required
+  confidence_flagging: required
+  retrieval_index_format: JSON
+  thresholds:
+    min_compression_ratio: 0.3
+    max_low_confidence_percent: 20
+    min_chunk_count: 5
+    max_chunk_count: 1000

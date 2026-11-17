@@ -1,0 +1,44 @@
+name: output-token-optimizer
+version: "1.0.0"
+description: Contract for local-first output-style compression and invariant preservation.
+
+inputs:
+  level:
+    type: string
+    required: false
+    default: full
+    enum:
+      - lite
+      - full
+      - ultra
+  action:
+    type: string
+    required: false
+    default: speak
+    enum:
+      - speak
+      - lean-commit
+      - lean-review
+      - lean-compress-file
+  target_file:
+    type: string
+    required: false
+    default: null
+    description: Required when action is lean-compress-file.
+
+invariants:
+  preserve_fenced_code: true
+  preserve_inline_code: true
+  preserve_urls: true
+  preserve_file_paths: true
+  preserve_versions: true
+  preserve_error_tokens: true
+  chars_per_token: 4
+
+validation:
+  invariants_preserved: true
+  substance_retained: true
+  revert_triggers:
+    - "normal mode"
+    - "verbose"
+    - "stop terse"

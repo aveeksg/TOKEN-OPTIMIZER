@@ -1,0 +1,207 @@
+{
+  "suite": "output-token-optimizer",
+  "verdict": "PASS",
+  "timestamp": "2026-11-17T09:28:15.863202+00:00",
+  "python_version": "3.11.8",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "total": 24,
+  "passed": 24,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "duration_ms": 1.444,
+  "tests": [
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_bare_relative_path_with_extension",
+      "status": "PASS",
+      "duration_ms": 0.094,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_error_identifiers",
+      "status": "PASS",
+      "duration_ms": 0.039,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_fenced_code_block",
+      "status": "PASS",
+      "duration_ms": 0.032,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_inline_code",
+      "status": "PASS",
+      "duration_ms": 0.025,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_posix_path",
+      "status": "PASS",
+      "duration_ms": 0.025,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_url",
+      "status": "PASS",
+      "duration_ms": 0.028,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_version_strings",
+      "status": "PASS",
+      "duration_ms": 0.027,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_extracts_windows_path",
+      "status": "PASS",
+      "duration_ms": 0.031,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_ignores_unanchored_prose_slashes",
+      "status": "PASS",
+      "duration_ms": 0.024,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_order_preserving_deduplication",
+      "status": "PASS",
+      "duration_ms": 0.029,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_verify_invariants_flags_altered_path_and_version",
+      "status": "PASS",
+      "duration_ms": 0.025,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_verify_invariants_flags_dropped_command",
+      "status": "PASS",
+      "duration_ms": 0.022,
+      "detail": ""
+    },
+    {
+      "module": "test_invariant_guard",
+      "class": "TestInvariantGuard",
+      "test": "test_verify_invariants_passes_when_preserved",
+      "status": "PASS",
+      "duration_ms": 0.028,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_empty_raw_is_zero_division_safe",
+      "status": "PASS",
+      "duration_ms": 0.355,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_invariants_preserved_false_when_code_dropped",
+      "status": "PASS",
+      "duration_ms": 0.155,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_invariants_preserved_true_when_code_kept",
+      "status": "PASS",
+      "duration_ms": 0.027,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_positive_reduction_on_verbose_input",
+      "status": "PASS",
+      "duration_ms": 0.037,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_reduction_rounded_to_one_decimal",
+      "status": "PASS",
+      "duration_ms": 0.022,
+      "detail": ""
+    },
+    {
+      "module": "test_savings_report",
+      "class": "TestSavingsReport",
+      "test": "test_report_has_all_six_keys",
+      "status": "PASS",
+      "duration_ms": 0.025,
+      "detail": ""
+    },
+    {
+      "module": "test_token_estimator",
+      "class": "TestTokenEstimator",
+      "test": "test_bankers_rounding_10_and_14",
+      "status": "PASS",
+      "duration_ms": 0.018,
+      "detail": ""
+    },
+    {
+      "module": "test_token_estimator",
+      "class": "TestTokenEstimator",
+      "test": "test_chars_per_token_constant_is_four",
+      "status": "PASS",
+      "duration_ms": 0.012,
+      "detail": ""
+    },
+    {
+      "module": "test_token_estimator",
+      "class": "TestTokenEstimator",
+      "test": "test_count_chars_matches_len",
+      "status": "PASS",
+      "duration_ms": 0.012,
+      "detail": ""
+    },
+    {
+      "module": "test_token_estimator",
+      "class": "TestTokenEstimator",
+      "test": "test_empty_returns_zero",
+      "status": "PASS",
+      "duration_ms": 0.011,
+      "detail": ""
+    },
+    {
+      "module": "test_token_estimator",
+      "class": "TestTokenEstimator",
+      "test": "test_estimate_tokens_divides_by_four",
+      "status": "PASS",
+      "duration_ms": 0.012,
+      "detail": ""
+    }
+  ]
+}
